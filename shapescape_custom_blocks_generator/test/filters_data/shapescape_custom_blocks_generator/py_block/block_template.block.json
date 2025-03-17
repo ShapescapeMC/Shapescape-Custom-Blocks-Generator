@@ -1,0 +1,14 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"states": {}
+		},
+		"permutations": [],
+		"components": {
+			"minecraft:collision_box": {
+				"size": [16, 16, 16]
+			}
+		}
+	}
+}

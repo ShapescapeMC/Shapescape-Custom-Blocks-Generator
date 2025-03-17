@@ -3,23 +3,23 @@
 :caption: Introduction
 
 Installation <introduction/installation>
-Settings <introduction/settings>
+Configuration Settings <introduction/configuration_settings>
 Usage <introduction/usage>
+Tutorial <introduction/tutorial>
+Block Files Generation <introduction/block_files_generation>
+JSON overriding <introduction/json_overriding>
 ```
 
 ![](../header.jpg)
 
-# PLACEHOLDER
-PLACEHOLDER
-
-## 🧑‍🏫 About
-PLACEHOLDER
+# Shapescape Custom Blocks Generator
+A Regolith filter that makes creating custom blocks easier.
 
 ## 👷 Contributing
-We welcome contributions from the community! If you'd like to contribute to this project, please read our [contribute file](https://www.github.com/ShapescapeMC/PLACEHOLDER/blob/main/CONTRIBUTING.md) for guidelines on how to get started.
+We welcome contributions from the community! If you'd like to contribute to this project, please read our [contribute file](https://www.github.com/ShapescapeMC/Shapescape-Custom-Blocks-Generator/blob/main/CONTRIBUTING.md) for guidelines on how to get started.
 
 ## 🗒️ License
-This project is licensed under the GNU v.3.0 License - see the [LICENSE](https://github.com/ShapescapeMC/PLACEHOLDER/blob/main/LICENSE) file for details.
+This project is licensed under the GNU v.3.0 License - see the [LICENSE](https://github.com/ShapescapeMC/Shapescape-Custom-Blocks-Generator/blob/main/LICENSE) file for details.
 
 This license ensures that the tool remains open source, while still allowing you to use the generated content in your commercial Minecraft projects.
 

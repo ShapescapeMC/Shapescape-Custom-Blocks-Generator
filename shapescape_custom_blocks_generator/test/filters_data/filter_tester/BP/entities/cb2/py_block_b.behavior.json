@@ -1,0 +1,48 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "shapescape:py_block_b",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"animations": {
+				"place": "controller.animation.cb2.py_block_b.place"
+			},
+			"scripts": {
+				"animate": ["place"]
+			}
+		},
+		"component_groups": {
+			"shapescape:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:timer": {
+				"time": 0.5,
+				"time_down_event": {
+					"event": "shapescape:despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:collision_box": {
+				"height": 0.0,
+				"width": 0.0
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"events": {
+			"shapescape:despawn": {
+				"add": {
+					"component_groups": ["shapescape:despawn"]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "shapescape:cubic_geo_attachable_block_spawn_egg",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.cb2_cube"
+			},
+			"textures": {
+				"default": "textures/attachable/cb2/cube_0"
+			},
+			"animations": {
+				"hold_1st_person": "animation.cb2.attachable_hold_1",
+				"hold_3rd_person": "animation.cb2.attachable_hold_2"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"hold_1st_person": "c.is_first_person"
+					},
+					{
+						"hold_3rd_person": "!c.is_first_person"
+					}
+				]
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

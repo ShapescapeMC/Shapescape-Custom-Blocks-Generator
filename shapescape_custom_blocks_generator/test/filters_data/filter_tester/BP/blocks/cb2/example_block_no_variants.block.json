@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"states": {},
+			"identifier": "shapescape:example_block_no_variants"
+		},
+		"permutations": [],
+		"components": {
+			"minecraft:collision_box": {
+				"size": [16, 16, 16]
+			},
+			"minecraft:map_color": "#FFFFFF",
+			"minecraft:geometry": "geometry.chair",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "block2",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:loot": "loot_tables/cb2/example_block_no_variants.loot.json"
+		}
+	}
+}

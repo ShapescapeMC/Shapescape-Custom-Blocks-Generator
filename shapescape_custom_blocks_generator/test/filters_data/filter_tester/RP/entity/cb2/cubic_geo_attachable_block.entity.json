@@ -1,0 +1,11 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "shapescape:cubic_geo_attachable_block",
+			"spawn_egg": {
+				"texture": "example_texture"
+			}
+		}
+	}
+}

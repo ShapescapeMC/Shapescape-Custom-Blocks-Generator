@@ -1,0 +1,126 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"states": {
+				"shapescape:material": {
+					"values": {
+						"min": 0,
+						"max": 1
+					}
+				},
+				"shapescape:rotation": {
+					"values": {
+						"min": 0,
+						"max": 5
+					}
+				}
+			},
+			"identifier": "shapescape:custom_geo_attacahble_block"
+		},
+		"permutations": [
+			{
+				"components": {},
+				"condition": "q.block_property('shapescape:material') == 0"
+			},
+			{
+				"components": {},
+				"condition": "q.block_property('shapescape:material') == 1"
+			},
+			{
+				"condition": "q.block_property('shapescape:rotation') == 0",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, -90, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:rotation') == 1",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 90, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:rotation') == 2",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [90, 0, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:rotation') == 3",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [-90, 0, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:rotation') == 4",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 180, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:rotation') == 5",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0, 0, 0]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:material') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "chair_red",
+							"render_method": "alpha_test"
+						},
+						"cushion": {
+							"texture": "chair",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:material') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "chair_blue",
+							"render_method": "alpha_test"
+						},
+						"cushion": {
+							"texture": "chair",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:collision_box": {
+				"size": [16, 16, 16]
+			},
+			"minecraft:geometry": "geometry.chair",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "chair",
+					"render_method": "alpha_test"
+				},
+				"cushion": {
+					"texture": "chair",
+					"render_method": "alpha_test"
+				}
+			}
+		}
+	}
+}

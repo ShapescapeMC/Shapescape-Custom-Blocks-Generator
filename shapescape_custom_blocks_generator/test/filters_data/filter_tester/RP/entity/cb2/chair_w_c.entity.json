@@ -1,0 +1,11 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "shapescape:chair_w_c",
+			"spawn_egg": {
+				"texture": "example_texture_w_c"
+			}
+		}
+	}
+}

@@ -1,0 +1,185 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.cb2.custom_geo_attacahble_block_c.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:custom_geo_attacahble_block_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=0,\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=0,\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=0,\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=0,\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=0,\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=0,\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.custom_geo_attacahble_block_w.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:custom_geo_attacahble_block_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=1,\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=1,\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=1,\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=1,\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=1,\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:custom_geo_attacahble_block[\"shapescape:material\"=1,\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.cubic_geo_attachable_block.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:cubic_geo_attachable_block_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:cubic_geo_attachable_block[\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:cubic_geo_attachable_block[\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:cubic_geo_attachable_block[\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:cubic_geo_attachable_block[\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:cubic_geo_attachable_block[\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:cubic_geo_attachable_block[\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.py_block_r.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:py_block_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.wood @a ~ ~ ~ 1 1", "/execute if entity @s[tag=can_place] run setblock ~ ~ ~ shapescape:py_block[\"shapescape:color\"=0]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.py_block_g.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:py_block_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.wood @a ~ ~ ~ 1 1", "/execute if entity @s[tag=can_place] run setblock ~ ~ ~ shapescape:py_block[\"shapescape:color\"=1]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.py_block_b.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:py_block_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.wood @a ~ ~ ~ 1 1", "/execute if entity @s[tag=can_place] run setblock ~ ~ ~ shapescape:py_block[\"shapescape:color\"=2]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.chair_o_c.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:chair_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=0,\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=0,\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=0,\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=0,\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=0,\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=0,\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.chair_o_w.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:chair_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=1,\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=1,\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=1,\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=1,\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=1,\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=0,\"shapescape:cushion\"=1,\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.chair_c_c.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:chair_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=0,\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=0,\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=0,\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=0,\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=0,\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=0,\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.chair_c_w.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:chair_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=1,\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=1,\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=1,\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=1,\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=1,\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=1,\"shapescape:cushion\"=1,\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.chair_w_c.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:chair_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=0,\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=0,\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=0,\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=0,\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=0,\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=0,\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.cb2.chair_w_w.place": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"set_block": "1.0"
+						}
+					]
+				},
+				"set_block": {
+					"on_entry": ["/tp @s ~ ~ ~ facing @p", "/execute if block ~ ~ ~ air run tag @s add can_place", "/execute if block ~ ~ ~ tallgrass run tag @s add can_place", "/execute if block ~ ~ ~ water run tag @s add can_place", "/execute if block ~ ~ ~ lava run tag @s add can_place", "/execute unless entity @s[tag=can_place] run give @p shapescape:chair_spawn_egg", "/execute if entity @s[tag=can_place] run playsound  use.stone @a ~ ~ ~ 1 1", "/tag @s[rxm=-90,rx=-60] add yp", "/tag @s[tag=!yp,rxm=60,rx=90] add ym", "/tag @s[tag=!yp,tag=!ym,rym=135,ry=180] add zm", "/tag @s[tag=!yp,tag=!ym,ry=-135,rym=-180] add zm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,rym=-45,ry=45] add zp", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,rym=45,ry=135] add xm", "/tag @s[tag=!yp,tag=!ym,tag=!zm,tag=!zp,tag=!xm,rym=-135,ry=-45] add xp", "/execute if entity @s[tag=can_place,tag=xp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=1,\"shapescape:rotation\"=0]", "/execute if entity @s[tag=can_place,tag=xm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=1,\"shapescape:rotation\"=1]", "/execute if entity @s[tag=can_place,tag=yp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=1,\"shapescape:rotation\"=2]", "/execute if entity @s[tag=can_place,tag=ym] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=1,\"shapescape:rotation\"=3]", "/execute if entity @s[tag=can_place,tag=zp] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=1,\"shapescape:rotation\"=4]", "/execute if entity @s[tag=can_place,tag=zm] run setblock ~ ~ ~ shapescape:chair[\"shapescape:frame\"=2,\"shapescape:cushion\"=1,\"shapescape:rotation\"=5]", "@s despawn"]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"texture_data": {
+		"example_texture_o_c": {
+			"textures": "textures/item/spawn_egg/example_texture_o_c"
+		},
+		"example_texture_o_w": {
+			"textures": "textures/item/spawn_egg/example_texture_o_w"
+		},
+		"example_texture_c_c": {
+			"textures": "textures/item/spawn_egg/example_texture_c_c"
+		},
+		"example_texture_c_w": {
+			"textures": "textures/item/spawn_egg/example_texture_c_w"
+		},
+		"example_texture_w_c": {
+			"textures": "textures/item/spawn_egg/example_texture_w_c"
+		},
+		"example_texture_w_w": {
+			"textures": "textures/item/spawn_egg/example_texture_w_w"
+		}
+	},
+	"texture_name": "atlas.items"
+}

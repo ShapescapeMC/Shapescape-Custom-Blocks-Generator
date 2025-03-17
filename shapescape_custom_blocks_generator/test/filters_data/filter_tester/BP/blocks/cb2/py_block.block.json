@@ -1,0 +1,76 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"states": {
+				"shapescape:color": {
+					"values": {
+						"min": 0,
+						"max": 2
+					}
+				}
+			},
+			"identifier": "shapescape:py_block"
+		},
+		"permutations": [
+			{
+				"components": {},
+				"condition": "q.block_property('shapescape:color') == 0"
+			},
+			{
+				"components": {},
+				"condition": "q.block_property('shapescape:color') == 1"
+			},
+			{
+				"components": {},
+				"condition": "q.block_property('shapescape:color') == 2"
+			},
+			{
+				"condition": "q.block_property('shapescape:color') == 0",
+				"components": {
+					"minecraft:loot": "loot_tables/cb2/py_block_r.loot.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "red"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:color') == 1",
+				"components": {
+					"minecraft:loot": "loot_tables/cb2/py_block_g.loot.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "green"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('shapescape:color') == 2",
+				"components": {
+					"minecraft:loot": "loot_tables/cb2/py_block_b.loot.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blue"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:collision_box": {
+				"size": [16, 16, 16]
+			},
+			"minecraft:map_color": "#FFFFFF",
+			"minecraft:geometry": "geometry.chair",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "block2",
+					"render_method": "alpha_test"
+				}
+			}
+		}
+	}
+}

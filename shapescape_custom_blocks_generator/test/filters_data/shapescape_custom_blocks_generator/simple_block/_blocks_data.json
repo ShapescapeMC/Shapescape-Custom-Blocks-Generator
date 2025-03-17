@@ -1,0 +1,195 @@
+{
+	"namespace": "shapescape",
+	"blocks": {
+		"chair": {
+			// This is an example of a block that shows most of the features
+			// of shapescape_custom_blocks_generator generator
+			"translation": "{frame} Chair With {cushion} Cushion",
+			"self_drop": true,
+			"rotation_type": "rotate_front_both",
+			"sound": "wood",
+			"block_entity_properties": {
+				"spawn_egg_texture": "example_texture",
+				"place_sound": "use.stone",
+
+				// Overrides the properties of the block entity behavior, starting
+				// from the minecraft:entity. This feature is useful to add
+				// compatibility with the content guide generator:
+				// https://github.com/ShapescapeMC/content-guide-generator
+				"entity_override": {
+					"description": {
+						"description": "An entity used for placing the chair blocks.",
+						"locations": [],
+						"category": "non_player_facing_utility",
+						"spawn_egg_description": "Spawns an entity used for placing the chair blocks.",
+						"spawn_egg_player_facing": true
+					}
+				}
+			},
+			"recipe_template": "recipe_template.recipe.json",
+			"recipe_template_override": {
+				"pattern": ["C  ", "FCF", "F F"]
+			},
+			"block_template": "block_template.block.json",
+			"block_template_override": {
+				"components": {
+					"minecraft:map_color": "#FFFFFF",
+					"minecraft:geometry": "geometry.chair",
+					"minecraft:destructible_by_explosion": {
+						"explosion_resistance": 0
+					},
+					"minecraft:destructible_by_mining": {
+						"seconds_to_destroy": 1.0
+					},
+					"minecraft:light_dampening": 0,
+					"minecraft:friction": 0.4,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "chair",
+							"render_method": "alpha_test"
+						},
+						"cushion": {
+							"texture": "chair",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			"shared_variant": {
+				"minecraft:material_instances": {
+					"*": {
+						"texture": "chair",
+						"render_method": "alpha_test"
+					},
+					"cushion": {
+						"texture": "chair",
+						"render_method": "alpha_test"
+					}
+				}
+			},
+			"variants": {
+				"frame": [
+					{
+						"translation": "Oak",
+						"id_suffix": "o",
+						"components": {
+							"minecraft:friction": 0.1
+						},
+						"recipe": {
+							"key": {
+								"F": { "item": "minecraft:planks" }
+							}
+						},
+						"shared_variant": {}
+					},
+					{
+						"translation": "Crimson",
+						"id_suffix": "c",
+						"components": {
+							"minecraft:friction": 0.1
+						},
+						"recipe": {
+							"key": {
+								"F": { "item": "minecraft:crimson_planks" }
+							}
+						},
+						"shared_variant": {
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "chair_red"
+								}
+							}
+						}
+					},
+					{
+						"translation": "Warped",
+						"id_suffix": "w",
+						"components": {
+							"minecraft:friction": 0.1
+						},
+						"recipe": {
+							"key": {
+								"F": { "item": "minecraft:warped_planks" }
+							}
+						},
+						"shared_variant": {
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "chair_blue"
+								}
+							}
+						}
+					}
+				],
+				"cushion": [
+					{
+						"translation": "Crimson",
+						"id_suffix": "c",
+						"components": {
+							"minecraft:friction": 0.1
+						},
+						"recipe": {
+							"key": {
+								"C": { "item": "minecraft:crimson_planks" }
+							}
+						},
+						"shared_variant": {
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "chair_red"
+								}
+							}
+						}
+					},
+					{
+						"translation": "Warped",
+						"id_suffix": "w",
+						"components": {
+							"minecraft:friction": 0.1
+						},
+						"recipe": {
+							"key": {
+								"C": { "item": "minecraft:warped_planks" }
+							}
+						},
+						"shared_variant": {
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "chair_blue"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"example_block_no_variants": {
+			// This is an example block without any variants or rotations used
+			// for testing. Some of the features that the block refers to
+			// migtht be missing in the generated pack. This is just an exmple.
+			"translation": "Example Block No Variants",
+			"self_drop": true,
+			"sound": "wood",
+			"recipe_template": "recipe_template.recipe.json",
+			"recipe_template_override": {
+				"pattern": ["C  ", "FCF", "F F"],
+				"result": {
+					"count": 10
+				}
+			},
+			"block_template": "block_template.block.json",
+			"block_template_override": {
+				"components": {
+					"minecraft:map_color": "#FFFFFF",
+					"minecraft:geometry": "geometry.chair",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "block2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		}
+	}
+}

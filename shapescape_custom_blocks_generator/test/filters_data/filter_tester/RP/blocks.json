@@ -1,0 +1,18 @@
+{
+	"format_version": [1, 16, 0],
+	"shapescape:custom_geo_attacahble_block": {
+		"sound": "wood"
+	},
+	"shapescape:cubic_geo_attachable_block": {
+		"sound": "stone"
+	},
+	"shapescape:py_block": {
+		"sound": "wood"
+	},
+	"shapescape:chair": {
+		"sound": "wood"
+	},
+	"shapescape:example_block_no_variants": {
+		"sound": "wood"
+	}
+}

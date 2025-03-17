@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "shapescape:custom_geo_attacahble_block_c_spawn_egg",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.chair"
+			},
+			"textures": {
+				"default": "textures/blocks/chair_red_block"
+			},
+			"animations": {
+				"hold_1st_person": "animation.cb2.attachable_hold_0",
+				"hold_3rd_person": "animation.cb2.attachable_hold_0"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"hold_1st_person": "c.is_first_person"
+					},
+					{
+						"hold_3rd_person": "!c.is_first_person"
+					}
+				]
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

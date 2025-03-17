@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"tags": ["crafting_table"],
+		"group": "chair",
+		"key": {
+			"F": {
+				"item": "minecraft:planks"
+			},
+			"S": {
+				"item": "minecraft:wool"
+			},
+			"C": {
+				"item": "minecraft:crimson_planks"
+			}
+		},
+		"pattern": ["C  ", "FCF", "F F"],
+		"description": {
+			"identifier": "shapescape:chair_o_c"
+		},
+		"result": {
+			"item": "shapescape:chair_o_c_spawn_egg"
+		}
+	}
+}

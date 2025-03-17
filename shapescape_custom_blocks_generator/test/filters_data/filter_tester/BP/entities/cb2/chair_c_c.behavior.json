@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "shapescape:chair_c_c",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"animations": {
+				"place": "controller.animation.cb2.chair_c_c.place"
+			},
+			"scripts": {
+				"animate": ["place"]
+			},
+			"description": "An entity used for placing the chair blocks.",
+			"locations": [],
+			"category": "non_player_facing_utility",
+			"spawn_egg_description": "Spawns an entity used for placing the chair blocks.",
+			"spawn_egg_player_facing": true
+		},
+		"component_groups": {
+			"shapescape:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:timer": {
+				"time": 0.5,
+				"time_down_event": {
+					"event": "shapescape:despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:collision_box": {
+				"height": 0.0,
+				"width": 0.0
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"events": {
+			"shapescape:despawn": {
+				"add": {
+					"component_groups": ["shapescape:despawn"]
+				}
+			}
+		}
+	}
+}
