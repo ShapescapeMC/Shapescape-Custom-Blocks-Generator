@@ -1,4 +1,5 @@
 {
+	"description": "A Regolith filter that makes creating custom blocks easier.",
 	"filters": [
 		{
 			"runWith": "python",
